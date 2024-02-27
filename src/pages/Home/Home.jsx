@@ -4,6 +4,7 @@ import AOS from "aos";
 import AboutSection from "./AboutSection/AboutSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import CarListSection from "./CarLIstSection/CarListSection";
+import TestimonialSection from "./TestimonialSection/TestimonialSection";
 
 const Home = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const Home = () => {
       <AboutSection />
       <ServicesSection />
       <CarListSection />
+      <TestimonialSection />
     </div>
   );
 };
