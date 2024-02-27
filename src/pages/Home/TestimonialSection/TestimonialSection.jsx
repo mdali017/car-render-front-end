@@ -4,7 +4,8 @@ const testimonialData = [
   {
     id: 1,
     name: "Dishad",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est,
         voluptatum ipsum saepe voluptatem minus sit error tempora vero ut?`,
     aosDelay: "0",
@@ -12,7 +13,8 @@ const testimonialData = [
   {
     id: 2,
     name: "Satya",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est,
         voluptatum ipsum saepe voluptatem minus sit error tempora vero ut?`,
     aosDelay: "300",
@@ -20,7 +22,8 @@ const testimonialData = [
   {
     id: 3,
     name: "Alexa",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa est,
         voluptatum ipsum saepe voluptatem minus sit error tempora vero ut?`,
     aosDelay: "1000",
@@ -50,13 +53,13 @@ const TestimonialSection = () => {
           </p>
         </div>
         {/* card section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-black dark:text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-8 text-black dark:text-white">
           {testimonialData.map((item) => (
             <div
               data-aos="fade-up"
               data-aos-delay={item.aosDelay}
               key={item.id}
-              className="card text-center group space-y-6 bg-gray-100 dark:bg-white/20 sm:py-12 duration-300 rounded-lg"
+              className="card text-center group space-y-6 p-6 bg-gray-100 dark:bg-white/20 sm:py-12 duration-300 rounded-lg"
             >
               <div className=" grid place-items-center">
                 <img

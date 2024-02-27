@@ -67,7 +67,6 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        time: 35:35
       </div>
     </div>
   );
