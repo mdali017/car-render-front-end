@@ -3,6 +3,7 @@ import Hero from "./Hero/Hero";
 import AOS from "aos";
 import AboutSection from "./AboutSection/AboutSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
+import CarListSection from "./CarLIstSection/CarListSection";
 
 const Home = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const Home = () => {
       <Hero theme={theme} />
       <AboutSection />
       <ServicesSection />
+      <CarListSection />
     </div>
   );
 };
