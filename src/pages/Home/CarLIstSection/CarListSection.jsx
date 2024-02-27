@@ -1,9 +1,11 @@
 import React from "react";
 import carImg1 from "../../../assets/Home/Cars/car-one.png";
-import carImg2 from "../../../assets/Home/Cars/car-two.png";
+// import carImg2 from "../../../assets/Home/Cars/car-two.png";
 import carImg3 from "../../../assets/Home/Cars/car-three.png";
 import carImg4 from "../../../assets/Home/Cars/car-four.png";
 import carImg5 from "../../../assets/Home/Cars/car-five.png";
+import carImg6 from "../../../assets/Home/Cars/car-six.png";
+import carImg7 from "../../../assets/Home/Cars/car-seven.png";
 
 const carList = [
   {
@@ -12,12 +14,12 @@ const carList = [
     image: carImg1,
     aosDelay: 0,
   },
-  //   {
-  //     name: "KIA UX",
-  //     price: 100,
-  //     image: carImg2,
-  //     aosDelay: 590,
-  //   },
+  // {
+  //   name: "KIA UX",
+  //   price: 100,
+  //   image: carImg2,
+  //   aosDelay: 590,
+  // },
   {
     name: "KIA UX",
     price: 100,
@@ -36,6 +38,18 @@ const carList = [
     image: carImg5,
     aosDelay: 590,
   },
+  {
+    name: "KIA UX",
+    price: 100,
+    image: carImg6,
+    aosDelay: 590,
+  },
+  {
+    name: "KIA UX",
+    price: 100,
+    image: carImg7,
+    aosDelay: 590,
+  },
 ];
 
 const CarListSection = () => {
@@ -43,22 +57,24 @@ const CarListSection = () => {
     <div className="pb-24 pt-12 bg-white dark:bg-dark dark:text-white">
       <div className="container">
         {/* heading */}
-        <h1
-          data-aos="fade-up"
-          className="text-3xl sm:text-4xl font-semibold font-serif mb-3"
-        >
-          Lorem ipsum dolor sit amet.
-        </h1>
-        <p data-aos="fade-up" className="text-sm pb-10">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nihil
-          quia doloremque assumenda. Accusantium ullam nesciunt iusto!
-          Veritatis, cupiditate temporibus?
-        </p>
+        <div className="text-center">
+          <h1
+            data-aos="fade-up"
+            className="text-3xl text-center sm:text-4xl font-semibold font-serif mb-3"
+          >
+            Our Products
+          </h1>
+          <p data-aos="fade-up" className="text-sm pb-10 max-w-[500px] mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+            nihil quia doloremque assumenda. Accusantium ullam nesciunt iusto!
+            Veritatis, cupiditate temporibus?
+          </p>
+        </div>
         {/* car Listing cards */}
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {carList.map((item, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center border border-gray-300">
                 <div>
                   <img src={item.image} alt="" />
                 </div>
