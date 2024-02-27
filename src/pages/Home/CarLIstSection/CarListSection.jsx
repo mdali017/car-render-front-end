@@ -12,7 +12,7 @@ const carList = [
     name: "BMW UX",
     price: 100,
     image: carImg1,
-    aosDelay: 0,
+    aosDelay: "0",
   },
   // {
   //   name: "KIA UX",
@@ -24,31 +24,31 @@ const carList = [
     name: "KIA UX",
     price: 100,
     image: carImg3,
-    aosDelay: 590,
+    aosDelay: "500",
   },
   {
     name: "KIA UX",
     price: 100,
     image: carImg4,
-    aosDelay: 590,
+    aosDelay: "600",
   },
   {
     name: "KIA UX",
     price: 100,
     image: carImg5,
-    aosDelay: 590,
+    aosDelay: "700",
   },
   {
     name: "KIA UX",
     price: 100,
     image: carImg6,
-    aosDelay: 590,
+    aosDelay: "800",
   },
   {
     name: "KIA UX",
     price: 100,
     image: carImg7,
-    aosDelay: 590,
+    aosDelay: "900",
   },
 ];
 
@@ -74,9 +74,18 @@ const CarListSection = () => {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
             {carList.map((item, index) => (
-              <div key={index} className="text-center border border-gray-300">
+              <div
+                data-aos="fade-up"
+                data-aos-duration={item.aosDelay}
+                key={index}
+                className="text-center group space-y-3 p-3 relative border border-gray-300 rounded-lg"
+              >
                 <div>
-                  <img src={item.image} alt="" />
+                  <img
+                    className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:translate-x-16 duration-500"
+                    src={item.image}
+                    alt=""
+                  />
                 </div>
                 <div>
                   <h2>{item.name}</h2>
@@ -90,8 +99,10 @@ const CarListSection = () => {
             ))}
           </div>
         </div>
+        <div data-aos="fade-up" className="grid place-content-center mt-8">
+          <button className="button-outline">Get Started</button>
+        </div>
       </div>
-      {/* <h1>Car List Section is Comming Here..</h1> */}
     </div>
   );
 };
