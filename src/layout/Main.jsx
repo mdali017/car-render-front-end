@@ -10,8 +10,8 @@ const Main = () => {
   const element = document.documentElement;
   useEffect(() => {
     if (theme === "dark") {
-      element.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      element.classList.add("dark");
     } else {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
